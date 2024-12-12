@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5dc; /* Off-white, cream background */
+    }
+
+    /* Custom minor adjustments */
+    .folder img {
+      width: 100px;
+    }
+
+    .portfolio-title {
+      font-family: "Courier New", monospace;
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 3px;
+      margin-top: 100px; /* Leave space for header */
+    }
+
+    .footer {
+      height: 80px;
+    }
+
+    /* Random placements for folders */
+    .folder:nth-child(1) {
+      position: absolute;
+      top: 150px;
+      left: 20%;
+    }
+
+    .folder:nth-child(2) {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .folder:nth-child(3) {
+      position: absolute;
+      top: 350px;
+      left: 70%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Control Center (Header) -->
+  <header class="d-flex justify-content-between align-items-center px-4 py-2 bg-white shadow fixed-top">
+    <!-- Left Section -->
+    <div class="d-flex align-items-center">
+      <img src="apple-logo.png" alt="Apple Logo" style="height: 16px; margin-right: 10px;"> <!-- Replace with your logo -->
+      <nav>
+        <a href="#" class="text-dark text-decoration-none me-3">Finder</a>
+        <a href="#" class="text-dark text-decoration-none me-3">File</a>
+        <a href="#" class="text-dark text-decoration-none me-3">Edit</a>
+        <a href="#" class="text-dark text-decoration-none me-3">View</a>
+        <a href="#" class="text-dark text-decoration-none me-3">Go</a>
+        <a href="#" class="text-dark text-decoration-none me-3">Window</a>
+        <a href="#" class="text-dark text-decoration-none">Help</a>
+      </nav>
+    </div>
+    <!-- Right Section -->
+    <div class="d-flex align-items-center">
+      <span class="me-3">Yashodhara Gambhire</span>
+      <img src="wifi-icon.png" alt="WiFi" style="height: 16px;" class="me-3"> <!-- Replace with WiFi Icon -->
+      <img src="bluetooth-icon.png" alt="Bluetooth" style="height: 16px;" class="me-3"> <!-- Replace with Bluetooth Icon -->
+      <img src="battery-icon.png" alt="Battery" style="height: 16px;" class="me-3"> <!-- Replace with Battery Icon -->
+      <span>Fri 29 Nov 6:35 AM</span>
+    </div>
+  </header>
+
+  <!-- Portfolio Title -->
+  <main>
+    <h1 class="portfolio-title">PORTFOLIO</h1>
+
+    <!-- Randomly Placed Folders -->
+    <div class="position-relative" style="height: 500px;">
+      <div class="folder text-center">
+        <a href="about.html" class="text-decoration-none">
+          <img src="folder-icon.png" alt="About Me"> <!-- Replace with folder icon -->
+          <p>About Me</p>
+        </a>
+      </div>
+      <div class="folder text-center">
+        <a href="resume.html" class="text-decoration-none">
+          <img src="folder-icon.png" alt="Resume">
+          <p>Resume</p>
+        </a>
+      </div>
+      <div class="folder text-center">
+        <a href="portfolio.html" class="text-decoration-none">
+          <img src="folder-icon.png" alt="Portfolio">
+          <p>Portfolio</p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Dock -->
+  <footer class="footer bg-white shadow d-flex justify-content-center align-items-center fixed-bottom">
+    <div class="d-flex align-items-center">
+      <a href="#" class="mx-2">
+        <img src="finder-icon.png" alt="Finder" style="width: 50px; height: 50px;"> <!-- Replace -->
+      </a>
+      <a href="#" class="mx-2">
+        <img src="mail-icon.png" alt="Mail" style="width: 50px; height: 50px;"> <!-- Replace -->
+      </a>
+      <a href="#" class="mx-2">
+        <img src="photos-icon.png" alt="Photos" style="width: 50px; height: 50px;"> <!-- Replace -->
+      </a>
+      <a href="#" class="mx-2">
+        <img src="spotify-icon.png" alt="Spotify" style="width: 50px; height: 50px;"> <!-- Replace -->
+      </a>
+      <a href="#" class="mx-2">
+        <img src="trash-icon.png" alt="Trash" style="width: 50px; height: 50px;"> <!-- Replace -->
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
